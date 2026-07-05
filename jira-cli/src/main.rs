@@ -63,7 +63,7 @@ impl FromStr for Status {
             "inprogress" | "in-progress" => Status::InProgress,
             "blocked" => Status::Blocked,
             "done" => Status::Done,
-            _ => panic!("The status you specified is not valid. Valid values: todo, inprogress, blocked and done.")
+            _ => panic!("The status you specified is not valid. Valid values are: todo, inprogress, blocked and done.")
         };
         Ok(status)
     }
